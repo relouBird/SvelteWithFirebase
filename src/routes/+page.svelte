@@ -55,7 +55,7 @@
 			}}
 			class="bg-[#00000061] px-2 pt-1 pb-1.5 rounded text-white">Add</button>
 		</div>
-		<div class="w-[27%] h-[350px] py-2 pl-2 pr-1.5 scrollbar-per overflow-y-scroll">
+		<div class="w-[310px] h-[350px] py-2 pl-2 pr-1.5 scrollbar-per overflow-y-scroll">
 			{#each allList as elt}
 			<div class="flex justify-between items-center">
 				<div class="py-1 flex justify-start gap-2 items-center">
