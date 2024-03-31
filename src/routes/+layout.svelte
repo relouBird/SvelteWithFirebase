@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import '../app.css';
-	let online : boolean = false;
+	let online : boolean = navigator.onLine;
 	onMount(()=>{
 		window.addEventListener('online',()=>{
 			online = true;
