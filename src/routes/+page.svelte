@@ -22,7 +22,7 @@
       allList = JSON.parse(storedValues);
     } else {
       allList =  [
-		{ name : "Bienvenue parmi dans la todo list.", done : true },
+		{ name : "Bienvenue a toi...", done : true },
 	];
       localStorage.setItem('tableau', JSON.stringify(allList));
     }
@@ -33,7 +33,7 @@
 </script>
 
 <svelte:head>
-	<title>Home</title>
+	<title>Pense-bête</title>
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 
@@ -55,9 +55,9 @@
 			}}
 			class="bg-[#00000061] px-2 pt-1 pb-1.5 rounded text-white">Add</button>
 		</div>
-		<div class="w-[27%] h-[350px] py-2 pl-10 pr-1.5 scrollbar-per overflow-y-scroll">
+		<div class="w-[27%] h-[350px] py-2 pl-2 pr-1.5 scrollbar-per overflow-y-scroll">
 			{#each allList as elt}
-			<div class="flex justify-between items-center pr-6">
+			<div class="flex justify-between items-center">
 				<div class="py-1 flex justify-start gap-2 items-center">
 					<input 
 					bind:checked={elt.done}
